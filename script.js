@@ -76,6 +76,9 @@ var productsState = [
   function adddata() {
     additemid = document.getElementById("additemid").innerHTML = ++ countNo;
   }
+
+  
+
   
   // DISPLAY PRODUCTS IN HOME PAGE
   function homeDisplayProducts() {
