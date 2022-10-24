@@ -138,7 +138,7 @@ function showCart() {
 
     </div>
     <div class="product__price2">R <span>${shopping[i].price}</span></div>
-    <button onclick="adddata()">+ ADD TO CART</button>
+    <button onclick="adddata()">- REMOVE</button>
   </div>
 
 </div>
