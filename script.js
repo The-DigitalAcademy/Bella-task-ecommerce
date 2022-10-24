@@ -2,84 +2,76 @@
 var productsState = [
   {
     id: 1,
-    name: 'Macbook Pro',
-    price: 28000,
+    name: 'Canon XA 55 UHD',
+    price: 52799,
     rates: 5,
     image:
-      'https://www.istore.co.za/media/catalog/product/m/a/macbook_pro_space_grey-1_2.png?format=jpeg',
+      'https://cameralandsandton.co.za/wp-content/uploads/2021/03/Canon-XA55-Professional-UHD-4K-Camcorder-Cameraland-Sandton-8.jpg',
   },
   {
     id: 2,
-    name: 'Iphone 13 Pro',
-    price: 23000,
+    name: 'P300 Led Spotlight',
+    price: 36649,
     rates: 3,
     image:
-      'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80',
+      'https://www.tradeinn.com/f/13832/138329132_5/aputure-nova-p300c-led-spotlight.jpg',
   },
   {
-    id: 1,
-    name: 'Iphone 6 C',
-    price: 7000,
+    id: 3,
+    name: 'SliderPlus V5Long',
+    price: 10995,
     rates: 2,
     image:
-      'https://images.unsplash.com/photo-1565849904461-04a58ad377e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=736&q=80',
+      'https://www.provideocoalition.com/wp-content/uploads/edelkronssliderplus5_001-9275403.jpg',
   },
   {
-    id: 1,
-    name: 'HP Laptop',
-    price: 8000,
+    id: 4,
+    name: 'DJI AIR 2S DRONE',
+    price: 16446,
     rates: 1,
     image:
-      'https://images.unsplash.com/photo-1589561084283-930aa7b1ce50?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80',
+      'https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTRS2T-IEepseoo6Lo8v2-VK7HF3sufXqBowjUBjZ1qspyz4mwdNsu8LVtMnLMaro9EExNb9UMA4Kygjgpu2GjsKvM3yzDHG7TzpeFq1UsZ7XopGxfPNjma&usqp=CAE'
+
   },
   {
-    id: 1,
-    name: 'Dell Laptop',
-    price: 4000,
+
+    id: 5,
+    name: 'Sided Green Screen Banner Wall',
+    price: 11999,
     rates: 1,
     image:
-      'https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+      'https://www.iconsshop.co.za/wp-content/uploads/2022/07/products-SLWB-768x768.jpg',
   },
   {
-    id: 1,
-    name: 'Macbook Pro',
-    price: 15000,
+    id: 6,
+    name: 'Mac Pro',
+    price: 78999,
     rates: 5,
     image:
-      'https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+      'https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTypVlEWVoPNDWrZ910-sQRnNwX9Q1J0cz6SkYTlZTxkDojg6-w5pFDI3YV_qG4sHey7BY-nSFU3meDX4DYELitquS7UrdfO2At4HsBqOuPLXfCyGZ90ihZRFg&usqp=CAE',
   },
   {
-    id: 1,
-    name: 'Playstation 5',
-    price: 20000,
+    id: 7,
+    name: 'SJcam 4000 AIR',
+    price: 1599,
     rates: 4,
     image:
-      'https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+      'https://media.takealot.com/covers_images/c194c574b3484b9eaf1076c649dcdefa/s-zoom.file',
   },
   {
-    id: 1,
-    name: 'PS 4 Joystick',
-    price: 1200,
+    id: 8,
+    name: 'Canon EOS 5D Mak DSLR',
+    price: 57695,
     rates: 3,
     image:
-      'https://images.unsplash.com/photo-1592840496694-26d035b52b48?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=825&q=80',
+      'https://i0.wp.com/www.fotodiscountworld.co.za/wp-content/uploads/2017/07/CANON-EOS-5D-Mark-IV-DSLR-Camera-EF-24-105mm-f4-L-IS-USM-II-Lens-1.jpg?w=700&ssl=1',
   },
 ]
 
-
+var shopping = []
 
 // LINK JS TO HTML ELEMENT
 const products = document.getElementById("products")
-
-
-let countNo = 0;
-
-function adddata() {
-  additemid = document.getElementById("additemid").innerHTML = ++countNo;
-}
-
-
-
 
 // DISPLAY PRODUCTS IN HOME PAGE
 function homeDisplayProducts() {
@@ -87,6 +79,7 @@ function homeDisplayProducts() {
 
   // loop into productsState and display
   for (let i = 0; i < productsState.length; i++) {
+
     products.innerHTML += `
       
       <div class="product">
@@ -101,45 +94,78 @@ function homeDisplayProducts() {
                   ${'<span>*</span>'.repeat(productsState[i].rates)}
                 </div>
                 <div class="product__price">R <span>${productsState[i].price}</span></div> 
-                  <button onclick="adddata()">+ ADD TO CART</button> 
+                  <button onclick="addCart(${i})">+ ADD TO CART</button> 
             </div>
       
       `
 
   }
 }
-function addCart() {
 
-  var arr = [];
-  for (var i = 1; i <= productsState.length; i++) {
+function addCart(i) {
 
-    if (productsState.id == "")
-
-      arr.push(i); // to add cart after select
-
-    products.innerHTML += `
-      
-       <div class="product">
-           <div class="product__img">
-               <img
-                 src=${arr[i].image}
-                 alt=""
-               />
-           </div>
-               <div class="product__name">${arr[i].name}</div>
-                 <div class="product__rate">
-                   ${'<span>*</span>'.repeat(arr[i].rates)}
-                 </div>
-                 <div class="product__price">R <span>${arr[i].price}</span></div> 
-                   <button onclick="adddata()">+ ADD TO CART</button> 
-             </div>
-       
-
-             `
-  }
-
+  shopping.push(productsState[i])
+  showCart()
+  addToLocalStorage()
 
 }
 
+function showCart() {
+
+ 
+  let count = document.getElementById('additemid');
+  let cart_prod = document.getElementById('cart_prod');
+  cart_prod.innerHTML = "";
+
+ for (let i = 1; i < shopping.length; i++) {
+
+  count.innerHTML = i;
+
+   
+    cart_prod.innerHTML += `
+
+    <div class="product" id="cart_prod">
+    <div class="product__img2">
+      <img
+        src="${shopping[i].image}"
+        alt=""
+      />
+    </div>
+
+    <div class="product__name2">${shopping[i].name}</div>
+    <div class="product__rate2">
+      
+
+    </div>
+    <div class="product__price2">R <span>${shopping[i].price}</span></div>
+    <button onclick="adddata()">+ ADD TO CART</button>
+  </div>
+
+</div>
+  
+    `
+
+   }
+
+}
+
+// Add values from array into local Storage
+function addToLocalStorage() {
+
+  let data = JSON.stringify(shopping)
+  localStorage.setItem('cart',data)
+  
+}
+
+// get value from local storage
+
+function getFromLocalStorage() {
+
+  data = JSON.parse(localStorage.getItem('cart'));
+  shopping = data;
+  
+}
 // CALL THE DISPLAY FUNCTION
+getFromLocalStorage()
+showCart()
 homeDisplayProducts()
